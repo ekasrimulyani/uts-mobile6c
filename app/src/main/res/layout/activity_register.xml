@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/far">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/appName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/background_light"
+        android:src="@drawable/ooo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/etRegisterUsername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Wika Snack"
+        android:textSize="@dimen/far"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/etRegisterUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_light"
+        android:hint="Username"
+        app:layout_constraintEnd_toEndOf="@+id/appName"
+        app:layout_constraintStart_toStartOf="@+id/appName"
+        app:layout_constraintTop_toBottomOf="@+id/appName" />
+
+    <EditText
+        android:id="@+id/etRegisterEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etRegisterUsername"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/background_light"
+        android:hint="Email"
+        app:layout_constraintEnd_toEndOf="@+id/etRegisterUsername"
+        app:layout_constraintStart_toStartOf="@+id/etRegisterUsername"
+        app:layout_constraintTop_toBottomOf="@+id/etRegisterUsername" />
+
+    <EditText
+        android:id="@+id/etRegisterHp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etRegisterEmail"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/background_light"
+        android:hint="No Hp"
+        app:layout_constraintEnd_toEndOf="@+id/etRegisterEmail"
+        app:layout_constraintStart_toStartOf="@+id/etRegisterEmail"
+        app:layout_constraintTop_toBottomOf="@+id/etRegisterEmail" />
+
+    <EditText
+        android:id="@+id/etRegisterPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etRegisterHp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/background_light"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/etRegisterHp"
+        app:layout_constraintStart_toStartOf="@+id/etRegisterHp"
+        app:layout_constraintTop_toBottomOf="@+id/etRegisterHp" />
+
+    <Button
+        android:id="@+id/btRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etRegisterPassword"
+        android:layout_alignEnd="@id/etRegisterPassword"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_dark"
+        android:text="Daftar"
+        android:textColor="@color/colorFree"
+        app:layout_constraintEnd_toEndOf="@+id/etRegisterPassword"
+        app:layout_constraintStart_toStartOf="@+id/etRegisterPassword"
+        app:layout_constraintTop_toBottomOf="@+id/etRegisterPassword" />
+
+    <Button
+        android:id="@+id/goLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etRegisterPassword"
+        android:layout_alignBaseline="@id/btRegister"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/normal"
+        android:text="Sudah punya akun?"
+        android:textColor="@color/colorFree"
+        app:layout_constraintEnd_toEndOf="@+id/etRegisterPassword"
+        app:layout_constraintStart_toStartOf="@+id/etRegisterPassword"
+        app:layout_constraintTop_toBottomOf="@+id/btRegister" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
